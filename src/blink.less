@@ -1,0 +1,559 @@
+.element-animated {
+	animation-duration: 1s;
+	animation-iteration-count: infinite;
+	animation-timing-function: steps(1);
+	display: inline-block;
+}
+
+@keyframes blink-standard {
+	0% {
+		opacity: 1;
+	}
+	50% {
+		opacity: 0;
+	}
+}
+
+.blink-standard {
+	animation-name: blink-standard;
+}
+
+.blink-slow {
+	animation-name: blink-standard;
+	animation-duration: 2s;
+}
+
+.blink-slower {
+	animation-name: blink-standard;
+	animation-duration: 4s;
+}
+
+.blink-glacial {
+	animation-name: blink-standard;
+	animation-duration: 6s;
+}
+
+.blink-fast {
+	animation-name: blink-standard;
+	animation-duration: .5s;
+}
+
+.blink-faster {
+	animation-name: blink-standard;
+	animation-duration: .25s;
+}
+
+.blink-machine-gun {
+	animation-name: blink-standard;
+	animation-duration: .1s;
+}
+
+@keyframes blink-uneven {
+	0% {
+		opacity: 1;
+	}
+
+	6% {
+		opacity: 0;
+	}
+
+	16% {
+		opacity: 1;
+	}
+
+	45% {
+		opacity: 0;
+	}
+
+	50% {
+		opacity: 1;
+	} 
+
+	74% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+
+.blink-uneven {
+	animation-name: blink-uneven;
+	animation-duration: 3s;
+}
+
+.blink-uneven-slow {
+	animation-name: blink-uneven;
+	animation-duration: 6s;
+}
+
+
+@keyframes blink-flicker {
+	0% {
+		opacity: 1;
+	}
+
+	11% {
+		opacity: 0;
+	}
+
+	13% {
+		opacity: 1;
+	}
+
+
+	40% {
+		opacity: 0;
+	}
+
+	41% {
+		opacity: 1;
+	}
+
+	49% {
+		opacity: 0;
+	}
+	51% {
+		opacity: 1;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+
+.blink-flicker {
+	animation-name: blink-flicker;
+	animation-duration: 3s;
+}
+
+@keyframes blink-flicker-fast {
+	0% {
+		opacity: 1;
+	}
+
+	21% {
+		opacity: 0;
+	}
+
+	24% {
+		opacity: 1;
+	}
+
+
+	60% {
+		opacity: 0;
+	}
+
+	62% {
+		opacity: 1;
+	}
+}
+
+
+.blink-flicker-fast {
+	animation-name: blink-flicker-fast;
+	animation-duration: 1s;
+}
+
+
+@keyframes blink-flicker-hurricane {
+	0% {
+		opacity: 1;
+	}
+
+	21% {
+		opacity: 0;
+	}
+
+	26% {
+		opacity: 1;
+	}
+
+	74% {
+		opacity: 0;
+	}
+
+	79% {
+		opacity: 1;
+	}
+}
+
+.blink-flicker-hurricane {
+	animation-name: blink-flicker-hurricane;
+	animation-duration: .5s;
+}
+
+@keyframes blink-flicker-slow {
+	0% {
+		opacity: 1;
+	}
+
+	11% {
+		opacity: 0;
+	}
+
+	12% {
+		opacity: 1;
+	}
+
+	40% {
+		opacity: 0;
+	}
+
+	41% {
+		opacity: 1;
+	}
+
+	79% {
+		opacity: 0;
+	}
+	80% {
+		opacity: 1;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+
+.blink-flicker-slow {
+	animation-name: blink-flicker-slow;
+	animation-duration: 7s;
+}
+
+@keyframes blink-glimmer {
+	0% {
+		opacity: 0;
+	}
+
+	11% {
+		opacity: 1;
+	}
+
+	13% {
+		opacity: 0;
+	}
+
+	57% {
+		opacity: 1;
+	}
+	59% {
+		opacity: 0;
+	}
+
+	79% {
+		opacity: 1;
+	}
+
+	81% {
+		opacity: 0;
+	}
+
+
+	100% {
+		opacity: 0;
+	}
+}
+
+.blink-glimmer {
+	animation-name: blink-glimmer;
+	animation-duration: 3s;
+}
+
+@keyframes blink-glimmer-slow {
+	0% {
+		opacity: 0;
+	}
+
+	57% {
+		opacity: 1;
+	}
+	61% {
+		opacity: 0;
+	}
+
+}
+
+.blink-glimmer-slow {
+	animation-name: blink-glimmer-slow;
+	animation-duration: 5s;
+}
+
+@keyframes blink-variable-speed {
+	0% { opacity: 1; }
+	20% {opacity: 0;}
+	40% { opacity: 1; }
+	50% {opacity: 0;}
+	60% { opacity: 1; }
+	65% {opacity: 0;}
+	70% { opacity: 1; }
+	75% {opacity: 0;}
+	79% { opacity: 1;}
+	83% {opacity: 0;}
+	86% { opacity: 1;}
+	89% {opacity: 0;}
+	92% { opacity: 1;}
+	95% {opacity: 0;}
+	97% { opacity: 1;}
+	99% {opacity: 0;}
+}
+
+.blink-variable-speed {
+	animation-name: blink-variable-speed;
+	animation-duration: 4s;
+	animation-direction: alternate;
+
+}
+
+@keyframes blink-flip {
+	0% {
+		opacity: 1;
+		transform: rotate(0);
+	}
+	25% {
+		opacity: 0;
+	}
+	50% {
+		opacity: 1;
+		transform: rotate3d(1,0,0,180deg);
+	}
+	75% {
+		opacity: 0;
+	}
+}
+
+.blink-flip {
+	animation-name: blink-flip;
+	animation-duration: 2s
+}
+
+
+@keyframes blink-clock {
+	0% { 
+		opacity: 1; 
+		transform: rotate(0deg);
+	}
+	12.5% {
+		opacity: 0;
+	}
+	25% {
+		opacity: 1;
+		transform: rotate(90deg);
+	}
+	37.5% {
+		opacity: 0;
+	}
+	50% {
+		opacity: 1;
+		transform: rotate(180deg);
+	}
+	62.5% {
+		opacity: 0;
+	}
+	75% {
+		opacity: 1;
+		transform: rotate(270deg);
+	}
+	87.5% {
+		opacity: 0;
+	}
+}
+
+.blink-clock {
+	animation-name: blink-clock;
+	animation-duration: 4s;
+}
+
+
+@keyframes blink-heartbeat {
+	0% {
+		opacity: 1;
+	}
+
+	10% {
+		opacity: 1;
+		transform: scale(.8);
+	}
+
+	11% {
+		opacity: 0;
+	}
+
+	50% {
+		opacity: 0;
+	}
+
+	51% {
+		opacity: 1;
+	}
+}
+
+.blink-heartbeat {
+	animation-name: blink-heartbeat;
+	animation-duration: 1s;
+	animation-timing-function: linear;
+}
+
+
+
+@keyframes blink-stamp {
+
+	0% {
+		opacity: 1;
+	}
+
+	10% {
+		opacity: 1;
+		transform: scale(.8);
+		box-shadow: none;
+	}
+
+	11% {
+		opacity: 0;
+	}
+
+	50% {
+		opacity: 0;
+		box-shadow: none;
+	}
+
+	51% {
+		opacity: 1;
+		box-shadow: 0 0 0 4px black;
+    	transform: rotate(-10deg) scale(1);
+	}
+
+	100% {
+		box-shadow: 0 0 0 4px black;
+    	transform: rotate(-10deg);
+	}
+
+}
+
+.blink-stamp {
+	display: inline-block;
+	padding: 0px 10px;
+	animation-name: blink-stamp;
+	animation-duration: 2s;
+	animation-timing-function: linear;
+}
+
+
+@keyframes blink-shake {
+	0% {
+		opacity: 1;
+	}
+
+	5% {
+		transform: translate(-20px, 0);
+	}
+
+	10% {
+		transform: translate(20px, 0);
+	}
+
+	15% {
+		transform: translate(-20px, 0);
+	}
+
+	20% {
+		opacity: 1;
+		transform: translate(20px, 0);
+	}
+
+	21% {
+		opacity: 0;
+	}
+
+	70% {
+		opacity: 0;
+	}
+
+	71% {
+		opacity: 1;
+		transform: translate(0,0)
+	}
+}
+
+.blink-shake {
+	animation-name: blink-shake;
+	animation-duration: 1s;
+	animation-timing-function: linear;
+}
+
+@keyframes blink-rotate-v {
+	0% {
+		opacity: 1;
+		transform: none;
+	}
+
+	30% {
+		transform: none;
+	}
+
+	50% {
+		opacity: 1;
+		transform: rotate3d(1,0,0, 90deg);
+	}
+	51% { opacity: 0; }
+	100% {opacity: 0;}
+}
+
+
+.blink-rotate-v {
+	animation-name: blink-rotate-v;
+	animation-duration: 1s;
+	animation-timing-function: linear;
+}
+
+@keyframes blink-rotate-h {
+	0% {
+		opacity: 1;
+		transform: none;
+	}
+
+	30% {
+		transform: none;
+	}
+
+	50% {
+		opacity: 1;
+		transform: rotate3d(0,1,0, 90deg);
+	}
+	51% { opacity: 0; }
+	100% {opacity: 0;}
+}
+
+
+.blink-rotate-h {
+	animation-name: blink-rotate-h;
+	animation-duration: 1s;
+	animation-timing-function: linear;
+}
+
+@keyframes blink-jump {
+	0% {
+		opacity: 1;
+		transform: none;
+	}
+
+	30% {
+		transform: none;
+	}
+
+	50% {
+		opacity: 1;
+		transform: translateY(-20px) rotate3d(1,0,0, 720deg);
+	}
+	51% { opacity: 0; }
+	100% {opacity: 0;}
+}
+
+
+.blink-jump {
+	animation-name: blink-jump;
+	animation-duration: 1s;
+	animation-timing-function: linear;
+}
